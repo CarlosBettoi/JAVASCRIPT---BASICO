@@ -1,6 +1,4 @@
-# Olá, Mundo 
- Primeiro repositório Git Github
+MEU PRIMEIRO REPOSITÓRIO
 
- Repositório criado no escritório
+ Este repositório vai tratar da Linguagem Javascript
  
- Linha adicionada diretamente do github
