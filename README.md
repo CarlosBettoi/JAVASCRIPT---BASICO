@@ -1,4 +1,4 @@
-# Olá, mundo (2)
+# Olá, mundo 
  Primeiro repositório Git Github
 
  Repositório criado no escritório
