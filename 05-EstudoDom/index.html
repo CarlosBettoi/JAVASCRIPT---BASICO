@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background:rgb(68, 125, 199);
+            color: white;
+            font: normal 20 pt Arial;
+        }
+    </style>
+    <link rel="shortcut icon" href="HTML5.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>iniciando estudos com DOM </h1>
+    <p> Aqui vai o resultado</p>
+    <p> aprendendo a usar o <strong>DOM</strong>  em JavaScript.</p>
+    <div id='msg'> Clique em mim</div>
+    <script>
+       var corpo = window.document.body // faz referência ao corpo do documento
+       var p1 = window.document.getElementsByTagName ('p') [0] // faz referência ao primeiro parágrafo que é o de número zero
+       p1.style.color ='blue' // faz com que o primeiro parágrafo fique na cor azul
+       corpo.style.background = 'black' // transforma a cor do fundo do texto para preto
+       document.write(p1.innerHTML) // escreve o contéudo da variável p1 na tela
+       var d = window.document.querySelector ('div#msg') // faz referência ao à div msg na variável d
+       d.style.background = 'green' // transforma o conteúdo que está na variável d na cor verde
+       d.innerText = 'Estou aguardando'// Transforma o conteúdo da variável d
+
+
+    </script>
+
+    
+
+    
+</body>
+</html>
