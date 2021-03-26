@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+</head>
+<body>
+   Insira sua Nacionalidade <input type="text" name="nac1" id="nac1">
+   <input type="button" value="VERIFICAR" onclick = 'nacionalidade ()'>
+   <div id ='res'></div>
+   <script>
+       function nacionalidade () {
+       var nac = window.document.querySelector('input#nac1')
+       var res = window.document.querySelector('div#res')
+       var nac2 = String(nac.value)
+       res.innerHTML = `<p>Sua nacionalidade é ${nac2}</p>`
+       if (nac1 == 'Brasileiro'){
+           res.innerHTML += 'Vocé é Brasileiro'} else {
+               res.innerHTML += 'Vocé é estrangeiro'
+       }
+       }
+   </script>
+</body>
+</html>
