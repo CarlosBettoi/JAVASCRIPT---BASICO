@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+          font: normal 20 pt Arial;
+          background: green;
+          color: white;
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+          text-align:center;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id ='area'>
+        Interaja...
+
+    </div>
+    <script>
+        var a = window.document.getElementById('area')// faz referência a div área colocando-a na variável a
+        a.addEventListener ('click', clicar) // atribui o evento de click do mouse à função clicar
+        a.addEventListener ('mouseenter', entrar) // atribui à função entrar o evento que ocorre quando o mouse entrar na área
+        a.addEventListener ('mouseout', sair) // atribui à função sair o evento que ocorre quando o mouse sair da área
+        
+        function clicar() {   // ao se clicar na área vai ser disparada a função clicar
+           a.innerText = 'clicou' // a palavra innerText vai escrever na tela a palavra clicou quando houver o click na área
+           a.style.background = 'red' // esse comando vai deixar a cor de fundo da área no cor vermelha
+        }
+        
+        function entrar() {
+            a.innerText = 'entrou'// Quando o mouse entrar na área vai aparecer a palavra entrou
+        }   
+
+        function sair() {
+            a.innerText = 'sair' // quando o mouse sair da área vai aparecer a palavra saiu
+            a.style.background = 'green' // essa linha vai mudar a cor da área para verde
+        }
+        
+    
+    </script>
+   
+</body>
+</html>
