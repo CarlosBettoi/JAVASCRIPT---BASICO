@@ -1,4 +1,3 @@
 MEU PRIMEIRO REPOSITÓRIO
 
- Este repositório vai tratar da Linguagem Javascript
- 
+ Este repositório contem aulas do curso de javascript do professor Gustavo Guanabara
